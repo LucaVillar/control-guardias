@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'usuarios',
     'sector',
     'guardia',
+    'novedad',
 
     # API
     'rest_framework',
