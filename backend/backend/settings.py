@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'turno',
     'incidente',
     'novedad',
+    'asistencia',
 
     # API
     'rest_framework',

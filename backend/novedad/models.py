@@ -1,6 +1,10 @@
 # guardias/models.py
 from django.db import models
 from django.conf import settings
+from turno.models import Turno
+from guardia.models import Guardia
+from sector.models import Sector
+from usuarios.models import Usuario
 
 
 class Novedad(models.Model):
@@ -24,7 +28,7 @@ class Novedad(models.Model):
 
     # FK → Turno (modelo de la misma app guardias)
     turno = models.ForeignKey(
-        "Turno",  # si Turno está en esta misma app
+        "turno.Turno",  # si Turno está en esta misma app
         on_delete=models.CASCADE,
         related_name="novedades",
     )
