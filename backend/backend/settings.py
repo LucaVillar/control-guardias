@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'sector',
     'guardia',
     'turno',
+    'incidente',
+    'novedad',
 
     # API
     'rest_framework',
